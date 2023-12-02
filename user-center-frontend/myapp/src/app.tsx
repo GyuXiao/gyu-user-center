@@ -23,6 +23,8 @@ export const initialStateConfig = {
 // ant design pro 的项目语法，url 的请求要在此定义
 export const request: RequestConfig = {
   timeout: 1000000,
+  // 根据项目的不同运行环境来决定 prefix 是什么
+  // prefix: isDev ? undefined : 'http://gyu-user-center.code-nav.cn',
 };
 
 /**

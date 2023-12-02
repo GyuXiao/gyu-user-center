@@ -1,12 +1,6 @@
 package main
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/model"
-	"GyuBlog/pkg/logger"
-	"GyuBlog/pkg/setting"
-	"GyuBlog/pkg/snowflake"
-	routers2 "GyuBlog/routers"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -18,6 +12,12 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"user-center-backend/global"
+	"user-center-backend/model"
+	"user-center-backend/pkg/logger"
+	"user-center-backend/pkg/setting"
+	"user-center-backend/pkg/snowflake"
+	routers2 "user-center-backend/routers"
 )
 
 func init() {

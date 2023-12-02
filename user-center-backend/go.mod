@@ -1,4 +1,4 @@
-module GyuBlog
+module user-center-backend
 
 go 1.18
 

@@ -19,7 +19,7 @@ RUN go mod download
 COPY . .
 
 # 将我们的代码编译成二进制可执行文件app
-RUN go build -o gyublog_app .
+RUN go build -o user-center-backend_app .
 
 
 # Docker 的最佳实践之一是通过仅保留二进制文件来减小镜像大小，为此，我们将使用一种称为多阶段构建的技术，这意味着我们将通过多个步骤构建镜像。
@@ -33,7 +33,7 @@ FROM scratch
 COPY ./conf /conf
 
 # 从 builder 镜像中把 /dist/app 拷贝到当前目录
-COPY --from=builder /build/gyublog_app /
+COPY --from=builder /build/user-center-backend_app /
 
 # 需要运行的命令
-CMD ["/gyublog_app", "conf/config.yaml"]
+CMD ["/user-center-backend_app", "conf/config.yaml"]

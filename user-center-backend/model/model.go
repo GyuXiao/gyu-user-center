@@ -1,13 +1,13 @@
 package model
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/pkg/setting"
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
 	"time"
+	"user-center-backend/global"
+	"user-center-backend/pkg/setting"
 )
 
 // 每张表的公共字段

@@ -12,3 +12,7 @@ const (
 	JSONMarshalError   = "JSON marshal error: %v"
 	JSONUnmarshalError = "JSON Unmarshal error: %v"
 )
+
+const (
+	JwtSecret = "user-center-backend"
+)

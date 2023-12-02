@@ -1,12 +1,12 @@
 package middleware
 
 import (
-	"GyuBlog/constant"
-	"GyuBlog/global"
-	"GyuBlog/model"
 	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"user-center-backend/constant"
+	"user-center-backend/global"
+	"user-center-backend/model"
 )
 
 // 中间件鉴权

@@ -1,9 +1,9 @@
 package app
 
 import (
-	"GyuBlog/pkg/errcode"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"user-center-backend/pkg/errcode"
 )
 
 type Response struct {

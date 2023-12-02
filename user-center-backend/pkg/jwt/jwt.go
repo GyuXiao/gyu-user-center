@@ -1,9 +1,10 @@
 package jwt
 
 import (
-	"GyuBlog/pkg/errcode"
 	"github.com/dgrijalva/jwt-go"
 	"time"
+	"user-center-backend/constant"
+	"user-center-backend/pkg/errcode"
 )
 
 type BlogClaims struct {
@@ -12,10 +13,8 @@ type BlogClaims struct {
 	jwt.StandardClaims
 }
 
-var blogSecret = []byte("GyuBlog")
-
 func keyFunc(_ *jwt.Token) (i interface{}, err error) {
-	return blogSecret, nil
+	return constant.JwtSecret, nil
 }
 
 const AccessTokenExpireDuration = time.Hour * 24
@@ -27,19 +26,19 @@ func GenToken(userID uint64, username string) (accessToken, refreshToken string,
 		Username: username,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(AccessTokenExpireDuration).Unix(),
-			Issuer:    "GyuBlog",
+			Issuer:    "user-center-backend",
 		},
 	}
 
-	accessToken, err = jwt.NewWithClaims(jwt.SigningMethodHS256, c).SignedString(blogSecret)
+	accessToken, err = jwt.NewWithClaims(jwt.SigningMethodHS256, c).SignedString(constant.JwtSecret)
 	if err != nil {
 		return "", "", err
 	}
 
 	refreshToken, err = jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
 		ExpiresAt: time.Now().Add(RefreshTokenExpireDuration).Unix(),
-		Issuer:    "GyuBlog",
-	}).SignedString(blogSecret)
+		Issuer:    "user-center-backend",
+	}).SignedString(constant.JwtSecret)
 	if err != nil {
 		return "", "", err
 	}

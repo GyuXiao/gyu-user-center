@@ -1,8 +1,8 @@
 package global
 
 import (
-	"GyuBlog/pkg/logger"
-	"GyuBlog/pkg/setting"
+	"user-center-backend/pkg/logger"
+	"user-center-backend/pkg/setting"
 )
 
 var (

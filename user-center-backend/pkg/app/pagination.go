@@ -1,9 +1,9 @@
 package app
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/pkg/convert"
 	"github.com/gin-gonic/gin"
+	"user-center-backend/global"
+	"user-center-backend/pkg/convert"
 )
 
 // 分页处理

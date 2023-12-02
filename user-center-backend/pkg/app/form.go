@@ -1,10 +1,10 @@
 package app
 
 import (
-	"GyuBlog/global"
 	"github.com/gin-gonic/gin"
 	val "github.com/go-playground/validator/v10"
 	"strings"
+	"user-center-backend/global"
 )
 
 type ValidError struct {

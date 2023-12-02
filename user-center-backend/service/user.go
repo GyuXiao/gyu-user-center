@@ -1,15 +1,15 @@
 package service
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/model"
-	"GyuBlog/pkg/errcode"
-	"GyuBlog/pkg/snowflake"
-	"GyuBlog/pkg/util"
 	"errors"
 	"github.com/jinzhu/gorm"
 	"regexp"
 	"time"
+	"user-center-backend/global"
+	"user-center-backend/model"
+	"user-center-backend/pkg/errcode"
+	"user-center-backend/pkg/snowflake"
+	"user-center-backend/pkg/util"
 )
 
 func (svc *Service) Signup(p *UserSignupRequest) (int64, error) {

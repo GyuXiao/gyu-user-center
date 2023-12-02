@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	"GyuBlog/pkg/app"
-	"GyuBlog/pkg/errcode"
-	"GyuBlog/pkg/limiter"
 	"github.com/gin-gonic/gin"
+	"user-center-backend/pkg/app"
+	"user-center-backend/pkg/errcode"
+	"user-center-backend/pkg/limiter"
 )
 
 func RateLimiter(l limiter.LimiterIf) gin.HandlerFunc {

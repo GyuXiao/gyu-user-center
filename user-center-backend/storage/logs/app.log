@@ -1,109 +1,109 @@
-2022/05/17 14:58:06 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T14:58:06.767686+08:00"}
-2022/05/17 16:28:50 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T16:28:50.462184+08:00"}
-2022/05/17 16:31:08 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T16:31:08.16348+08:00"}
-2022/05/17 17:05:54 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:05:54.454164+08:00"}
-2022/05/17 17:08:43 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:08:43.048121+08:00"}
-2022/05/17 17:11:11 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:11:11.951219+08:00"}
-2022/05/17 17:20:39 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:20:39.237624+08:00"}
-2022/05/18 17:08:20 {"callers":["$/Users/zk.xiao/GolandProjects/GyuBlog/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[0 1]中的一个","time":"2022-05-18T17:08:20.92477+08:00"}
-2023/05/12 20:18:46 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683893926090161000}
-2023/05/12 20:19:42 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683893982298823400}
-2023/05/12 20:23:59 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683894239130366800}
-2023/05/12 20:25:33 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683894333205964400}
-2023/05/12 23:52:55 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906775620276300}
-2023/05/12 23:53:18 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683906798304941900}
-2023/05/12 23:53:30 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906810979564800}
-2023/05/12 23:55:37 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906937234916000}
-2023/05/12 23:55:53 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683906953881070000}
-2023/05/12 23:56:01 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906961353330100}
-2023/05/12 23:56:46 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683907006436063500}
-2023/05/12 23:56:51 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683907011143098300}
-2023/05/12 23:57:31 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683907051701475300}
-2023/05/13 17:20:00 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.GetTagList err: Error 1054: Unknown column 'id_del' in 'where clause'","time":1683969600639624600}
-2023/05/13 18:11:53 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683972713291270200}
-2023/05/13 18:17:41 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973061077784200}
-2023/05/13 18:22:52 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973372755169100}
-2023/05/13 18:23:29 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973409989629800}
-2023/05/13 18:27:43 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973663261739400}
-2023/05/13 18:27:51 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973671222820400}
-2023/05/13 18:28:00 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973680934676300}
-2023/05/13 18:28:03 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973683044919000}
-2023/05/13 18:28:29 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973709053622200}
-2023/05/13 18:37:43 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683974263125764300}
-2023/05/13 18:40:36 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683974436473616100}
-2023/05/13 18:45:11 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683974711085463600}
-2023/10/15 23:10:27 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697382627290988500}
-2023/10/15 23:15:54 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697382954347266900}
-2023/10/15 23:29:08 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697383748000404900}
-2023/10/15 23:33:32 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697384012480963600}
-2023/10/15 23:52:14 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697385134136599200}
-2023/10/16 00:06:05 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697385965617581600}
-2023/10/16 00:26:07 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697387167230430100}
-2023/10/16 00:27:13 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697387233765828600}
-2023/10/16 00:28:03 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697387283476050900}
-2023/10/16 10:37:50 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697423870102281700}
-2023/10/16 10:38:45 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697423925035231400}
-2023/10/16 10:39:04 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697423944900010700}
-2023/10/16 10:39:27 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697423967553631000}
-2023/10/16 10:40:52 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697424052746079200}
-2023/10/16 11:54:42 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697428482014334300}
-2023/10/16 13:02:33 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: unsupported destination, should be slice or struct","time":1697432553034253700}
-2023/10/16 13:03:52 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: unsupported destination, should be slice or struct","time":1697432632969983000}
-2023/10/16 13:06:06 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697432766899524000}
-2023/10/16 13:09:45 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697432985204929500}
-2023/10/16 13:15:01 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697433301658940100}
-2023/10/16 13:15:51 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: record not found","time":1697433351605210000}
-2023/10/16 13:16:19 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: record not found","time":1697433379199365700}
-2023/10/16 13:22:25 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: Error 1054: Unknown column 'username,index:username' in 'field list'","time":1697433745987347400}
-2023/10/16 13:24:18 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697433858228461500}
-2023/10/16 17:26:47 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697448407986174400}
-2023/10/16 17:26:57 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697448417771063900}
-2023/10/16 17:27:06 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697448426186972100}
-2023/10/16 17:49:35 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697449775008380100}
-2023/10/17 22:44:55 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1054: Unknown column '芙芙' in 'field list'","time":1697553895794946600}
-2023/10/18 16:20:56 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1697617256714888000}
-2023/10/18 16:25:38 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1697617538134289400}
-2023/10/18 16:26:05 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697617565761712500}
-2023/10/27 00:32:49 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698337969380211300}
-2023/10/27 00:36:27 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1054: Unknown column 'access_token' in 'field list'","time":1698338187767686700}
-2023/10/28 11:03:53 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462233866588600}
-2023/10/28 11:04:27 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462267072365100}
-2023/10/28 11:05:24 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462324911628100}
-2023/10/28 11:25:13 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698463513642873400}
-2023/10/28 11:40:19 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698464419471142700}
-2023/10/28 11:40:41 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1698464441636555000}
-2023/10/28 11:40:55 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698464455000778400}
-2023/10/28 11:46:36 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698464796398119700}
-2023/10/28 11:53:57 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698465237980813300}
-2023/10/28 11:54:10 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698465250351319400}
-2023/10/28 11:55:33 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698465333487747500}
-2023/10/28 11:56:44 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1698465404026023600}
-2023/10/28 12:00:08 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1698465608765762000}
-2023/10/28 12:00:52 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1698465652082066800}
-2023/10/28 23:22:38 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698506558723552400}
-2023/10/28 23:22:49 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698506569033548000}
-2023/10/29 23:31:06 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698593466021915800}
-2023/10/29 23:32:39 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698593559447799400}
-2023/10/29 23:32:46 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698593566676533200}
-2023/11/03 11:57:00 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698983820006540800}
-2023/11/03 11:57:10 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698983830550879800}
-2023/11/03 15:32:23 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1698996743794985200}
-2023/11/03 15:32:55 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1698996775213292100}
-2023/11/03 17:38:07 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699004287486434900}
-2023/11/03 17:38:20 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699004300655870200}
-2023/11/03 17:38:33 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1699004313926496200}
-2023/11/05 22:36:38 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699194998290201900}
-2023/11/05 22:37:28 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699195048382946700}
-2023/11/05 22:47:11 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699195631539581400}
-2023/11/05 22:48:02 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699195682953899000}
-2023/11/11 12:15:09 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699676109252167300}
-2023/11/11 12:16:26 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699676186943201900}
-2023/11/11 13:42:32 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1406 (22001): Data too long for column 'password' at row 1","time":1699681352526552300}
-2023/11/11 13:56:12 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1406 (22001): Data too long for column 'password' at row 1","time":1699682172192073300}
-2023/11/11 13:59:13 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682353181599100}
-2023/11/11 14:01:56 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682516119141900}
-2023/11/11 14:02:28 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682548731742600}
-2023/11/11 15:25:17 {"callers":["$D:/GolandProjects/GyuBlog/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699687517689431700}
+2022/05/17 14:58:06 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T14:58:06.767686+08:00"}
+2022/05/17 16:28:50 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T16:28:50.462184+08:00"}
+2022/05/17 16:31:08 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T16:31:08.16348+08:00"}
+2022/05/17 17:05:54 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:05:54.454164+08:00"}
+2022/05/17 17:08:43 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:08:43.048121+08:00"}
+2022/05/17 17:11:11 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:11:11.951219+08:00"}
+2022/05/17 17:20:39 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 25 main.init.0"],"level":"info","message":"eddycjy: go-programming-tour-book/blog-service","time":"2022-05-17T17:20:39.237624+08:00"}
+2022/05/18 17:08:20 {"callers":["$/Users/zk.xiao/GolandProjects/user-center-backend/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[0 1]中的一个","time":"2022-05-18T17:08:20.92477+08:00"}
+2023/05/12 20:18:46 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683893926090161000}
+2023/05/12 20:19:42 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683893982298823400}
+2023/05/12 20:23:59 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683894239130366800}
+2023/05/12 20:25:33 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 23 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683894333205964400}
+2023/05/12 23:52:55 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906775620276300}
+2023/05/12 23:53:18 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683906798304941900}
+2023/05/12 23:53:30 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906810979564800}
+2023/05/12 23:55:37 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906937234916000}
+2023/05/12 23:55:53 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683906953881070000}
+2023/05/12 23:56:01 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683906961353330100}
+2023/05/12 23:56:46 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683907006436063500}
+2023/05/12 23:56:51 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1683907011143098300}
+2023/05/12 23:57:31 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: State必须是[ 0 1]中的一个","time":1683907051701475300}
+2023/05/13 17:20:00 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.GetTagList err: Error 1054: Unknown column 'id_del' in 'where clause'","time":1683969600639624600}
+2023/05/13 18:11:53 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683972713291270200}
+2023/05/13 18:17:41 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973061077784200}
+2023/05/13 18:22:52 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973372755169100}
+2023/05/13 18:23:29 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973409989629800}
+2023/05/13 18:27:43 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973663261739400}
+2023/05/13 18:27:51 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973671222820400}
+2023/05/13 18:28:00 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683973680934676300}
+2023/05/13 18:28:03 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973683044919000}
+2023/05/13 18:28:29 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683973709053622200}
+2023/05/13 18:37:43 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683974263125764300}
+2023/05/13 18:40:36 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ID为必填字段, ModifiedBy为必填字段","time":1683974436473616100}
+2023/05/13 18:45:11 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ModifiedBy为必填字段, ID为必填字段","time":1683974711085463600}
+2023/10/15 23:10:27 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697382627290988500}
+2023/10/15 23:15:54 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697382954347266900}
+2023/10/15 23:29:08 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697383748000404900}
+2023/10/15 23:33:32 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697384012480963600}
+2023/10/15 23:52:14 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697385134136599200}
+2023/10/16 00:06:05 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697385965617581600}
+2023/10/16 00:26:07 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697387167230430100}
+2023/10/16 00:27:13 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697387233765828600}
+2023/10/16 00:28:03 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697387283476050900}
+2023/10/16 10:37:50 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697423870102281700}
+2023/10/16 10:38:45 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697423925035231400}
+2023/10/16 10:39:04 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1697423944900010700}
+2023/10/16 10:39:27 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697423967553631000}
+2023/10/16 10:40:52 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697424052746079200}
+2023/10/16 11:54:42 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697428482014334300}
+2023/10/16 13:02:33 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: unsupported destination, should be slice or struct","time":1697432553034253700}
+2023/10/16 13:03:52 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: unsupported destination, should be slice or struct","time":1697432632969983000}
+2023/10/16 13:06:06 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697432766899524000}
+2023/10/16 13:09:45 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697432985204929500}
+2023/10/16 13:15:01 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697433301658940100}
+2023/10/16 13:15:51 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: record not found","time":1697433351605210000}
+2023/10/16 13:16:19 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: record not found","time":1697433379199365700}
+2023/10/16 13:22:25 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: Error 1054: Unknown column 'username,index:username' in 'field list'","time":1697433745987347400}
+2023/10/16 13:24:18 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup err: 错误码：20040002, 错误信息：用户已经存在","time":1697433858228461500}
+2023/10/16 17:26:47 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697448407986174400}
+2023/10/16 17:26:57 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697448417771063900}
+2023/10/16 17:27:06 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697448426186972100}
+2023/10/16 17:49:35 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1697449775008380100}
+2023/10/17 22:44:55 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1054: Unknown column '芙芙' in 'field list'","time":1697553895794946600}
+2023/10/18 16:20:56 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1697617256714888000}
+2023/10/18 16:25:38 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1697617538134289400}
+2023/10/18 16:26:05 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1697617565761712500}
+2023/10/27 00:32:49 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698337969380211300}
+2023/10/27 00:36:27 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1054: Unknown column 'access_token' in 'field list'","time":1698338187767686700}
+2023/10/28 11:03:53 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462233866588600}
+2023/10/28 11:04:27 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462267072365100}
+2023/10/28 11:05:24 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: ","time":1698462324911628100}
+2023/10/28 11:25:13 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698463513642873400}
+2023/10/28 11:40:19 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698464419471142700}
+2023/10/28 11:40:41 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1698464441636555000}
+2023/10/28 11:40:55 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698464455000778400}
+2023/10/28 11:46:36 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698464796398119700}
+2023/10/28 11:53:57 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698465237980813300}
+2023/10/28 11:54:10 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698465250351319400}
+2023/10/28 11:55:33 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698465333487747500}
+2023/10/28 11:56:44 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1698465404026023600}
+2023/10/28 12:00:08 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword为必填字段","time":1698465608765762000}
+2023/10/28 12:00:52 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1698465652082066800}
+2023/10/28 23:22:38 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698506558723552400}
+2023/10/28 23:22:49 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698506569033548000}
+2023/10/29 23:31:06 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698593466021915800}
+2023/10/29 23:32:39 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698593559447799400}
+2023/10/29 23:32:46 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698593566676533200}
+2023/11/03 11:57:00 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1698983820006540800}
+2023/11/03 11:57:10 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1698983830550879800}
+2023/11/03 15:32:23 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ConfirmPassword必须等于Password","time":1698996743794985200}
+2023/11/03 15:32:55 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1698996775213292100}
+2023/11/03 17:38:07 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699004287486434900}
+2023/11/03 17:38:20 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699004300655870200}
+2023/11/03 17:38:33 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: Password为必填字段","time":1699004313926496200}
+2023/11/05 22:36:38 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699194998290201900}
+2023/11/05 22:37:28 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699195048382946700}
+2023/11/05 22:47:11 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699195631539581400}
+2023/11/05 22:48:02 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699195682953899000}
+2023/11/11 12:15:09 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699676109252167300}
+2023/11/11 12:16:26 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040003, 错误信息：用户不存在","time":1699676186943201900}
+2023/11/11 13:42:32 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1406 (22001): Data too long for column 'password' at row 1","time":1699681352526552300}
+2023/11/11 13:56:12 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1406 (22001): Data too long for column 'password' at row 1","time":1699682172192073300}
+2023/11/11 13:59:13 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682353181599100}
+2023/11/11 14:01:56 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682516119141900}
+2023/11/11 14:02:28 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699682548731742600}
+2023/11/11 15:25:17 {"callers":["$D:/GolandProjects/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Login errs: 错误码：20040004, 错误信息：用户密码错误","time":1699687517689431700}
 2023/11/16 23:18:49 {"callers":["$D:/projects/gyu-user-center/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"svc.Signup failed, err: Error 1364 (HY000): Field 'userPassword' doesn't have a default value","time":1700147929379283900}
 2023/11/16 23:20:19 {"callers":["$D:/projects/gyu-user-center/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1700148019487332500}
 2023/11/16 23:22:42 {"callers":["$D:/projects/gyu-user-center/user-center-backend/main.go: 29 main.init.0"],"level":"error","message":"app.BindAndValid errs: ","time":1700148162825769400}

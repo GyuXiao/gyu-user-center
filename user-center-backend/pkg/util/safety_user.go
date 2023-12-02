@@ -1,8 +1,8 @@
 package util
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/model"
+	"user-center-backend/global"
+	"user-center-backend/model"
 )
 
 func GetSafetyUser(user *model.User) model.User {

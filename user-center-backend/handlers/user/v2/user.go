@@ -1,17 +1,17 @@
 package v2
 
 import (
-	"GyuBlog/constant"
-	"GyuBlog/global"
-	"GyuBlog/model"
-	"GyuBlog/pkg/app"
-	"GyuBlog/pkg/errcode"
-	"GyuBlog/pkg/util"
-	"GyuBlog/service"
 	"encoding/json"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"strconv"
+	"user-center-backend/constant"
+	"user-center-backend/global"
+	"user-center-backend/model"
+	"user-center-backend/pkg/app"
+	"user-center-backend/pkg/errcode"
+	"user-center-backend/pkg/util"
+	"user-center-backend/service"
 )
 
 type User struct{}

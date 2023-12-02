@@ -1,10 +1,10 @@
 package model
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/pkg/errcode"
 	"errors"
 	"github.com/jinzhu/gorm"
+	"user-center-backend/global"
+	"user-center-backend/pkg/errcode"
 )
 
 type User struct {

@@ -1,12 +1,12 @@
 package routers
 
 import (
-	"GyuBlog/global"
-	v2 "GyuBlog/handlers/user/v2"
-	"GyuBlog/middleware"
-	"GyuBlog/pkg/limiter"
 	"github.com/gin-gonic/gin"
 	"time"
+	"user-center-backend/global"
+	v2 "user-center-backend/handlers/user/v2"
+	"user-center-backend/middleware"
+	"user-center-backend/pkg/limiter"
 )
 
 var methodLimiters = limiter.NewMethodLimiter().AddBuckets(limiter.LimitBucketRule{

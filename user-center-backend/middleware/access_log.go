@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/pkg/logger"
 	"bytes"
 	"github.com/gin-gonic/gin"
 	"time"
+	"user-center-backend/global"
+	"user-center-backend/pkg/logger"
 )
 
 type AccessLogWriter struct {

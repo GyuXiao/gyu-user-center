@@ -1,13 +1,13 @@
 package middleware
 
 import (
-	"GyuBlog/global"
-	"GyuBlog/pkg/app"
-	"GyuBlog/pkg/email"
-	"GyuBlog/pkg/errcode"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"time"
+	"user-center-backend/global"
+	"user-center-backend/pkg/app"
+	"user-center-backend/pkg/email"
+	"user-center-backend/pkg/errcode"
 )
 
 func Recovery() gin.HandlerFunc {
