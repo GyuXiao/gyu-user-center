@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd48b6c6-ff17-4cc9-a299-bed58192eba7" name="Changes" comment="feat: 1,修正后端项目的包路径; 2,前端项目增加部分注释">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/.idea/go-project-init.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/.idea/go-project-init.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/constant/constant.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/constant/constant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/docker-compose.service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/docker-compose.service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/global/setting.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/global/setting.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/handlers/user/v2/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/handlers/user/v2/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/middleware/access_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/middleware/access_log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/middleware/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/middleware/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/middleware/limiter.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/middleware/limiter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/middleware/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/middleware/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/model/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/model/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/pkg/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/pkg/app/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/pkg/app/form.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/pkg/app/form.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/pkg/app/pagination.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/pkg/app/pagination.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/pkg/jwt/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/pkg/jwt/jwt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/pkg/util/safety_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/pkg/util/safety_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/routers/routers.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/routers/routers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/service/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-backend/storage/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-backend/storage/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-center-frontend/myapp/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/user-center-frontend/myapp/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +32,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/projects/gyu-user-center/user-center-backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\projects\\gyu-user-center\\user-center-frontend\\myapp\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/gyu-user-center/user-center-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\gyu-user-center\\user-center-frontend\\myapp\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Build.go build user-center-backend (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gyu-user-center" />
