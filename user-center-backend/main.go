@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -15,12 +16,16 @@ import (
 	"user-center-backend/global"
 	"user-center-backend/model"
 	"user-center-backend/pkg/logger"
-	"user-center-backend/pkg/setting"
 	"user-center-backend/pkg/snowflake"
 	routers2 "user-center-backend/routers"
+	"user-center-backend/setting"
 )
 
+var ENV string
+
 func init() {
+	setupRunMode()
+
 	err := setupSetting()
 	if err != nil {
 		log.Fatalf("init.setupSetting err: %v", err)
@@ -59,7 +64,7 @@ func setupLogger() error {
 }
 
 func setupSetting() error {
-	settingV2, err := setting.NewSetting()
+	settingV2, err := setting.NewSetting(ENV)
 	if err != nil {
 		return err
 	}
@@ -107,6 +112,11 @@ func setupValidator() {
 	if ok {
 		_ = zhTranslations.RegisterDefaultTranslations(v, global.Trans)
 	}
+}
+
+func setupRunMode() {
+	flag.StringVar(&ENV, "env", "dev", "run mode")
+	flag.Parse()
 }
 
 func main() {

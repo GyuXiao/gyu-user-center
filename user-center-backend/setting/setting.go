@@ -1,6 +1,8 @@
 package setting
 
-import "github.com/spf13/viper"
+import (
+	"github.com/spf13/viper"
+)
 
 type Setting struct {
 	vp *viper.Viper
@@ -8,9 +10,12 @@ type Setting struct {
 
 // NewSetting 用于初始化本项目的配置的基础属性，包括配置文件的名称, 配置类型, 配置路径
 
-func NewSetting() (*Setting, error) {
+func NewSetting(env string) (*Setting, error) {
 	vp := viper.New()
 	vp.SetConfigName("config")
+	if env == "prod" {
+		vp.SetConfigName("config-prod")
+	}
 	vp.AddConfigPath("conf")
 	vp.SetConfigType("yaml")
 	err := vp.ReadInConfig()

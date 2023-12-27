@@ -14,7 +14,7 @@ services:
       DB_PORT: 3306 # 数据库端口
       DB_USER: gyu
       DB_PASSWORD: 123
-      DB_NAME: blog_service
+      DB_NAME: user_center_db
     networks:
       - gyu_blog_net
 networks:

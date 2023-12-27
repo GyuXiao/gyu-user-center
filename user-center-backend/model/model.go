@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 	"user-center-backend/global"
-	"user-center-backend/pkg/setting"
+	"user-center-backend/setting"
 )
 
 // 每张表的公共字段
