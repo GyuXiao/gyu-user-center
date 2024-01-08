@@ -3,10 +3,11 @@ package middleware
 import (
 	"encoding/json"
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"user-center-backend/constant"
 	"user-center-backend/global"
 	"user-center-backend/model"
+	"user-center-backend/pkg/app"
+	"user-center-backend/pkg/errcode"
 )
 
 // 中间件鉴权
@@ -32,7 +33,8 @@ func AuthMiddleWare() gin.HandlerFunc {
 				return
 			}
 		}
-		c.JSON(http.StatusUnauthorized, gin.H{"error": err})
+		response := app.NewResponse(c)
+		response.ToErrorResponse(errcode.UnauthorizedTokenError.WithDetails(err.Error()))
 		c.Abort()
 	}
 }

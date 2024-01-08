@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
@@ -115,6 +116,8 @@ func setupValidator() {
 }
 
 func setupRunMode() {
+	// 本地调试时，value 改为 dev
+	// 线上部署，value 改为 prod
 	flag.StringVar(&ENV, "env", "dev", "run mode")
 	flag.Parse()
 }
@@ -136,5 +139,8 @@ func main() {
 	// 测试 Logger 是否达到预期
 	// global.Logger.Infof("%s: go-programming-tour-book/%s", "eddycjy", "blog-service")
 
-	s.ListenAndServe()
+	err := s.ListenAndServe()
+	if err != nil {
+		global.Logger.Errorf(context.Background(), "server.ListenAndServe err: %v", err)
+	}
 }
