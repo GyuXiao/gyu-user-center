@@ -118,7 +118,7 @@ func setupValidator() {
 func setupRunMode() {
 	// 本地调试时，value 改为 dev
 	// 线上部署，value 改为 prod
-	flag.StringVar(&ENV, "env", "dev", "run mode")
+	flag.StringVar(&ENV, "env", "prod", "run mode")
 	flag.Parse()
 }
 
