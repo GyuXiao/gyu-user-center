@@ -1,4 +1,4 @@
-FROM golang:1.18-alpine AS builder
+FROM golang:1.20.3 AS builder
 
 # 为镜像设置必要的环境变量
 ENV GO111MODULE=on \
@@ -36,4 +36,4 @@ COPY ./conf /conf
 COPY --from=builder /build/user-center-backend_app /
 
 # 需要运行的命令
-CMD ["/user-center-backend_app", "conf/config.yaml"]
+CMD ["/user-center-backend_app", "conf/config-prod.yaml"]
