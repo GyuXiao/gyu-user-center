@@ -24,7 +24,8 @@ export const initialStateConfig = {
 export const request: RequestConfig = {
   timeout: 1000000,
   // 根据项目的不同运行环境来决定 prefix 是什么
-  prefix: isDev ? undefined : 'http://user-backend.gyustudio.site',
+  // 前端与后端的域名请求保持一致
+  prefix: isDev ? undefined : 'http://user.gyustudio.site:8081',
 };
 
 /**
@@ -38,6 +39,7 @@ export async function getInitialState(): Promise<{
   fetchUserInfo?: () => Promise<API.CurrentUser | undefined>;
 }> {
   const fetchUserInfo = async () => {
+    // 一进到本系统就先获取用户信息
     try {
       const res = await queryCurrentUser();
       return res.data
@@ -97,8 +99,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
     // 自定义 403 页面
     // unAccessible: <div>unAccessible</div>,
     // 增加一个 loading 的状态
-    childrenRender: (children, props) => {
-      // if (initialState?.loading) return <PageLoading />;
+    childrenRender: (children: any, props: { location: { pathname: string | string[]; }; }) => {
       return (
         <>
           {children}

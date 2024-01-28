@@ -93,7 +93,8 @@ func (u User) LoginHandler(c *gin.Context) {
 		response.ToErrorResponse(errcode.ErrorCurrentUser.WithDetails("JSON Marshal 时发生错误"))
 		return
 	}
-	c.SetCookie(constant.UserLoginState, string(session), constant.CookieExpire, "/", "", false, true)
+	// domain 改为 user-backend.gyustudio.site 并不可行
+	c.SetCookie(constant.UserLoginState, string(session), constant.CookieExpire, "/", "user.gyustudio.site", false, true)
 
 	// 业务响应
 	response.ToErrorResponse(errcode.Success.WithData(user))

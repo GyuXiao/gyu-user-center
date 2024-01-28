@@ -19,6 +19,12 @@ const Footer: React.FC = () => {
           href: 'https://github.com/GyuXiao',
           blankTarget: true,
         },
+        {
+          key: 'gyustudio.site',
+          title: '粤ICP备2024172144号',
+          href: 'https://beian.miit.gov.cn',
+          blankTarget: true,
+        },
       ]}
     />
   );

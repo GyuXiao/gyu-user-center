@@ -27,7 +27,7 @@ const LoginMessage: React.FC<{
   />
 );
 const Login: React.FC = () => {
-  const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
+  const [userLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
   const { initialState, setInitialState } = useModel('@@initialState');
   const fetchUserInfo = async () => {
@@ -58,10 +58,6 @@ const Login: React.FC = () => {
         };
         history.push(redirect || '/');
         return;
-      } else {
-        // 如果失败去设置用户错误信息
-        setUserLoginState(res);
-        throw new Error(res.msg);
       }
     } catch (error) {
       const defaultLoginFailureMessage = '账户名或密码错误！';
