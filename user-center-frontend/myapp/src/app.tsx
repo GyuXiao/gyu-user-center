@@ -25,7 +25,7 @@ export const request: RequestConfig = {
   timeout: 1000000,
   // 根据项目的不同运行环境来决定 prefix 是什么
   // 前端与后端的域名请求保持一致
-  prefix: isDev ? undefined : 'http://user.gyustudio.site:8081',
+  prefix: isDev ? undefined : 'http://user-backend.gyustudio.site',
 };
 
 /**
