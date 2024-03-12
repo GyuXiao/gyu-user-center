@@ -134,7 +134,7 @@ func (svc *Service) Search(username string) ([]model.User, error) {
 	if len(username) < 6 {
 		return nil, errcode.ErrorSearchUserParams
 	}
-	_, err := regexp.MatchString("/[`~!@#$%^&*()_\\-+=<>?:\"{}|,.\\/;'\\\\[\\]·~！@#￥%……&*（）——\\-+={}|《》？：“”【】、；‘'，。、]/", username)
+	_, err := regexp.MatchString(constant.PatternStr, username)
 	if err != nil {
 		return nil, errcode.ErrorSearchUserParams
 	}
