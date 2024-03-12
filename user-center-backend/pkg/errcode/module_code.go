@@ -18,6 +18,18 @@ var (
 	ErrorUserLoginParams    = NewError(20010007, "用户登陆参数错误")
 	ErrorCurrentUser        = NewError(20010008, "获取当前用户信息错误")
 	ErrorUserNoLogin        = NewError(20010009, "用户未登录")
+	ErrorUserLogout         = NewError(20010010, "用户退出失败")
+	ErrorUserIdNotExist     = NewError(20010011, "用户 ID 不存在")
+	ErrorUserIdConvert      = NewError(20010012, "用户 ID 格式转换错误")
+	ErrorUserRoleNotExist   = NewError(20010013, "用户角色不存在")
+	ErrorUserRoleConvert    = NewError(20010014, "用户角色格式转换错误")
+)
+
+// Token 错误码
+
+var (
+	ErrorTokenNotExist = NewError(30010001, "Token 不存在")
+	ErrorTokenFetch    = NewError(30010002, "从 Redis 获取 Token 失败")
 )
 
 // 管理员 错误码

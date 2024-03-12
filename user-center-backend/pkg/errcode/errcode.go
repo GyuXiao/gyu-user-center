@@ -85,6 +85,8 @@ func (e *Errors) StatusCode() int {
 		return http.StatusUnauthorized
 	case TooManyRequests.Code():
 		return http.StatusTooManyRequests
+	case ErrorUserLoginFail.Code():
+		fallthrough
 	case ErrorUserExit.Code():
 		fallthrough
 	case ErrorUserPassword.Code():
@@ -96,7 +98,9 @@ func (e *Errors) StatusCode() int {
 	case ErrorUserLoginParams.Code():
 		fallthrough
 	case ErrorSearchUserParams.Code():
-		return http.StatusOK
+		fallthrough
+	case ErrorTokenFetch.Code():
+		fallthrough
 	case ErrorCurrentUser.Code():
 		return http.StatusOK
 	}

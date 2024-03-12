@@ -7,6 +7,8 @@ import (
 	"user-center-backend/pkg/errcode"
 )
 
+// MySQL 存放 User 数据信息
+
 type User struct {
 	// id
 	Id int64 `gorm:"column:id"`
@@ -34,6 +36,17 @@ type User struct {
 	CreateTime global.JsonTime `gorm:"column:createTime;autoCreateTime"`
 	UpdateTime global.JsonTime `gorm:"column:updateTime;autoUpdateTime"`
 	IsDelete   int8            `json:"isDelete" gorm:"column:isDelete"`
+}
+
+type UserFrontObject struct {
+	UserId      uint64 `json:"userId,string"`
+	Username    string `json:"username"`
+	UserAccount string `json:"userAccount"`
+	Token       string `json:"token,omitempty"`
+	UserRole    int8   `json:"userRole"`
+	Phone       string `json:"phone,omitempty"`
+	Email       string `json:"email,omitempty"`
+	Gender      int64  `json:"gender"`
 }
 
 func (u *User) TableName() string {
@@ -70,6 +83,7 @@ func QueryUserByAccount(userAccount string) (*User, error) {
 
 func QueryUserByUsername(username string) (*[]User, error) {
 	var user []User
+	// 如果 username 是索引列的话，则不能在左模糊查询（导致索引失效，全表扫描）
 	err := DBEngine.Where("isDelete=0 and username like ?", "%"+username+"%").Find(&user).Error
 	if err != nil {
 		return nil, err

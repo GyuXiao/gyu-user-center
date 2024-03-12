@@ -35,6 +35,14 @@ type DatabaseSettingS struct {
 	MaxOpenConns int
 }
 
+type RedisSettingS struct {
+	Host     string
+	Port     int
+	Password string
+	DB       int
+	PoolSize int
+}
+
 type JWTSettingS struct {
 	Secret string
 	Issuer string

@@ -42,6 +42,11 @@ func init() {
 		log.Fatalf("init.setupDBEngine err: %v", err)
 	}
 
+	err = setupRedisClient()
+	if err != nil {
+		log.Fatalf("init.setupRedisClient err: %v", err)
+	}
+
 	setupValidator()
 
 	// 雪花算法生成分布式 ID
@@ -82,6 +87,10 @@ func setupSetting() error {
 	if err != nil {
 		return err
 	}
+	err = settingV2.ReadSection("Redis", &global.RedisSetting)
+	if err != nil {
+		return err
+	}
 	err = settingV2.ReadSection("JWT", &global.JWTSetting)
 	if err != nil {
 		return err
@@ -106,6 +115,15 @@ func setupDBEngine() error {
 	return nil
 }
 
+func setupRedisClient() error {
+	var err error
+	model.RedisClient, err = model.NewRedisClient(global.RedisSetting)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func setupValidator() {
 	uni := ut.New(en.New())
 	global.Trans, _ = uni.GetTranslator("en")
@@ -118,7 +136,7 @@ func setupValidator() {
 func setupRunMode() {
 	// 本地调试时，value 改为 dev
 	// 线上部署，value 改为 prod
-	flag.StringVar(&ENV, "env", "prod", "run mode")
+	flag.StringVar(&ENV, "env", "dev", "run mode")
 	flag.Parse()
 }
 

@@ -2,9 +2,11 @@ package service
 
 import (
 	"errors"
+	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
 	"regexp"
 	"time"
+	"user-center-backend/constant"
 	"user-center-backend/global"
 	"user-center-backend/model"
 	"user-center-backend/pkg/errcode"
@@ -20,7 +22,7 @@ func (svc *Service) Signup(p *UserSignupRequest) (int64, error) {
 	if len(p.UserAccount) < 6 || len(p.UserPassword) < 8 || len(p.ConfirmPassword) < 8 {
 		return -1, errcode.ErrorUserRegisterParams
 	}
-	_, err := regexp.MatchString("/[`~!@#$%^&*()_\\-+=<>?:\"{}|,.\\/;'\\\\[\\]·~！@#￥%……&*（）——\\-+={}|《》？：“”【】、；‘'，。、]/", p.UserAccount)
+	_, err := regexp.MatchString(constant.PatternStr, p.UserAccount)
 	if err != nil {
 		return -1, errcode.ErrorUserRegisterParams
 	}
@@ -61,7 +63,7 @@ func encodePassword(pwd string) (string, error) {
 	return util.EncodeMd5([]byte(hashStr)), nil
 }
 
-func (svc *Service) Login(p *UserLoginRequest) (user *model.User, error error) {
+func (svc *Service) Login(p *UserLoginRequest) (user *model.UserFrontObject, error error) {
 	// 1，参数校验
 	if p.UserAccount == "" || p.Password == "" {
 		return nil, errcode.ErrorUserLoginParams
@@ -69,7 +71,7 @@ func (svc *Service) Login(p *UserLoginRequest) (user *model.User, error error) {
 	if len(p.UserAccount) < 6 || len(p.Password) < 8 {
 		return nil, errcode.ErrorUserLoginParams
 	}
-	_, err := regexp.MatchString("/[`~!@#$%^&*()_\\-+=<>?:\"{}|,.\\/;'\\\\[\\]·~！@#￥%……&*（）——\\-+={}|《》？：“”【】、；‘'，。、]/", p.UserAccount)
+	_, err := regexp.MatchString(constant.PatternStr, p.UserAccount)
 	if err != nil {
 		return nil, errcode.ErrorUserLoginParams
 	}
@@ -87,9 +89,23 @@ func (svc *Service) Login(p *UserLoginRequest) (user *model.User, error error) {
 		return nil, errcode.ErrorUserPassword
 	}
 
-	// 3，数据查询成功后，返回脱敏后的用户信息
-	safeUser := util.GetSafetyUser(u)
-	return &safeUser, nil
+	// 3，数据查询成功后，记录用户登录态，并返回给前端信息
+	token := uuid.NewString()
+	err = model.InsertToken(token, u.UserId, u.UserRole)
+	if err != nil {
+		return nil, err
+	}
+	//safeUser := util.GetSafetyUser(u)
+	return &model.UserFrontObject{
+		UserId:      u.UserId,
+		Username:    u.Username,
+		UserAccount: u.UserAccount,
+		Token:       token,
+		UserRole:    u.UserRole,
+		Phone:       u.Phone,
+		Email:       u.Email,
+		Gender:      u.Gender,
+	}, nil
 
 	// 返回  accessToken 和 refreshToken
 	/*
@@ -107,6 +123,10 @@ func (svc *Service) Login(p *UserLoginRequest) (user *model.User, error error) {
 		return
 	*/
 
+}
+
+func (svc *Service) Logout(token string) error {
+	return model.DeleteToken(token)
 }
 
 func (svc *Service) Search(username string) ([]model.User, error) {

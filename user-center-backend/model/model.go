@@ -1,9 +1,11 @@
 package model
 
 import (
+	"context"
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/redis/go-redis/v9"
 	"log"
 	"time"
 	"user-center-backend/global"
@@ -147,4 +149,30 @@ func addExtraSpaceIfExist(str string) string {
 
 func CloseDBEngine() {
 	_ = DBEngine.Close()
+}
+
+// 如果项目较大的话，MySQL 和 Redis 的环境配置逻辑应该放在不同的文件中
+// 启动 Redis 并返回一个 Redis 客户端实例
+
+func NewRedisClient(redisSetting *setting.RedisSettingS) (*redis.Client, error) {
+	client := redis.NewClient(&redis.Options{
+		Addr:     fmt.Sprintf("%s:%d", redisSetting.Host, redisSetting.Port),
+		Password: redisSetting.Password,
+		DB:       redisSetting.DB,
+		PoolSize: redisSetting.PoolSize,
+	})
+	ctx := context.Background()
+	_, err := client.Ping(ctx).Result()
+	if err != nil {
+		log.Printf("init redis failed, err: %v", err)
+		return nil, err
+	}
+	return client, nil
+}
+
+func CloseRedis() {
+	err := RedisClient.Close()
+	if err != nil {
+		log.Printf("close redis failed, err: %v", err)
+	}
 }

@@ -11,6 +11,7 @@ import (
 )
 
 // 中间件鉴权
+// 原先的逻辑是从 cookie 中拿到 userRole 并判断是否是管理员，现在准备弃用
 
 func AuthMiddleWare() gin.HandlerFunc {
 	return func(c *gin.Context) {

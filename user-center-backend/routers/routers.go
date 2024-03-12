@@ -28,6 +28,8 @@ func NewRouter() *gin.Engine {
 
 	r.Use(middleware.RateLimiter(methodLimiters))
 	r.Use(middleware.ContextTimeout(60 * time.Second))
+	// 1,先刷新 Token
+	r.Use(middleware.RefreshToken)
 
 	user := v2.NewUser()
 
@@ -39,16 +41,18 @@ func NewRouter() *gin.Engine {
 	apiv2.POST("/register", user.SignupHandler)
 	// 用户登陆
 	apiv2.POST("/login", user.LoginHandler)
+
+	// 2，根据 Token 保存用户信息（后面具体的操作中，我都先 refreshToken，不知是否合适）
+	apiv2.Use(middleware.SetPersonalDetailsByToken)
 	// 用户注销
 	apiv2.POST("/logout", user.LogoutHandler)
 	// 获取当前用户信息
 	apiv2.GET("/current", user.CurrentUser)
-
 	// 管理员
 	// 查询用户
-	apiv2.GET("/search", middleware.AuthMiddleWare(), user.Search)
+	apiv2.GET("/search", user.Search)
 	// 删除用户
-	apiv2.POST("/delete", middleware.AuthMiddleWare(), user.Delete)
+	apiv2.POST("/delete", user.Delete)
 
 	//apiv2.Use(app.JWT())
 	return r
