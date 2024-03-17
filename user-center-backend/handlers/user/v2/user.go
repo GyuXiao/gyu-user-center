@@ -85,15 +85,6 @@ func (u User) LoginHandler(c *gin.Context) {
 		return
 	}
 
-	// 记录用户登陆态
-	//session, err := json.Marshal(user)
-	//if err != nil {
-	//	global.Logger.Errorf(c, constant.JSONMarshalError, err)
-	//	response.ToErrorResponse(errcode.ErrorCurrentUser.WithDetails("JSON Marshal 时发生错误"))
-	//	return
-	//}
-	//c.SetCookie(constant.UserLoginState, string(session), constant.CookieExpire, "/", "", false, true)
-
 	// 业务响应
 	response.ToErrorResponse(errcode.Success.WithData(user))
 	return
@@ -143,27 +134,6 @@ func (u User) CurrentUser(c *gin.Context) {
 func (u User) Search(c *gin.Context) {
 	response := app.NewResponse(c)
 
-	// 从 cookie 从中拿到 user 对象
-	//session, err := c.Cookie(constant.UserLoginState)
-	//if err != nil {
-	//	response.ToErrorResponse(errcode.ErrorCurrentUser.WithDetails("从 cookie 中获取信息时发生错误"))
-	//	return
-	//}
-	//var user model.User
-	//// 将 session 反序列化为 user 对象
-	//err = json.Unmarshal([]byte(session), &user)
-	//if err != nil {
-	//	global.Logger.Errorf(c, constant.JSONUnmarshalError, err)
-	//	response.ToErrorResponse(errcode.ErrorCurrentUser.WithDetails("JSON Unmarshal 时发生错误"))
-	//	return
-	//}
-	//token := c.GetHeader(constant.TokenHeader)
-	//err := model.RefreshToken(token)
-	//if err != nil {
-	//	global.Logger.Errorf(c, "svc.SearchUser errs: %v", err)
-	//	response.ToErrorResponse(errcode.ErrorTokenRefresh.WithDetails("redis 刷新 token 失败"))
-	//	return
-	//}
 	userRole, err := util.GetUserRole(c)
 	// 如果当前账号不是管理员，是无法搜索用户的
 	if err != nil {
@@ -202,14 +172,6 @@ func (u User) Search(c *gin.Context) {
 func (u User) Delete(c *gin.Context) {
 	response := app.NewResponse(c)
 
-	// 也许不需要 refreshToken？
-	//token := c.GetHeader(constant.TokenHeader)
-	//err := model.RefreshToken(token)
-	//if err != nil {
-	//	global.Logger.Errorf(c, "svc.DeleteUser errs: %v", err)
-	//	response.ToErrorResponse(errcode.ErrorTokenRefresh.WithDetails("redis 刷新 token 失败"))
-	//	return
-	//}
 	userRole, err := util.GetUserRole(c)
 	// 如果当前账号不是管理员，是无法删除用户的
 	if err != nil {

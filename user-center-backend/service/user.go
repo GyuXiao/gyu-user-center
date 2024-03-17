@@ -106,23 +106,6 @@ func (svc *Service) Login(p *UserLoginRequest) (user *model.UserFrontObject, err
 		Email:       u.Email,
 		Gender:      u.Gender,
 	}, nil
-
-	// 返回  accessToken 和 refreshToken
-	/*
-		// 数据查询成功
-		user = &model.User{
-			UserName: p.UserAccount,
-			UserID:   userID,
-		}
-		accessToken, refreshToken, genError := jwt.GenToken(user.UserID, user.UserName)
-		if genError != nil {
-			return nil, genError
-		}
-		user.AccessToken = accessToken
-		user.RefreshToken = refreshToken
-		return
-	*/
-
 }
 
 func (svc *Service) Logout(token string) error {

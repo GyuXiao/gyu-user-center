@@ -9,6 +9,7 @@ import (
 	"user-center-backend/pkg/limiter"
 )
 
+// TODO: 说明这里只对 /auth 接口进行限流
 var methodLimiters = limiter.NewMethodLimiter().AddBuckets(limiter.LimitBucketRule{
 	Key:          "/auth",
 	FillInterval: time.Second,
@@ -25,24 +26,21 @@ func NewRouter() *gin.Engine {
 		r.Use(middleware.AccessLog())
 		r.Use(middleware.Recovery())
 	}
-
 	r.Use(middleware.RateLimiter(methodLimiters))
 	r.Use(middleware.ContextTimeout(60 * time.Second))
+
 	// 1,先刷新 Token
 	r.Use(middleware.RefreshToken)
 
 	user := v2.NewUser()
-
-	//r.GET("/auth", api.GetAuth)
 	apiv2 := r.Group("/api/user")
-
-	// 用户模块
+	// 普通用户
 	// 用户注册
 	apiv2.POST("/register", user.SignupHandler)
 	// 用户登陆
 	apiv2.POST("/login", user.LoginHandler)
 
-	// 2，根据 Token 保存用户信息（后面具体的操作中，我都先 refreshToken，不知是否合适）
+	// 2,根据 Token 保存用户信息
 	apiv2.Use(middleware.SetPersonalDetailsByToken)
 	// 用户注销
 	apiv2.POST("/logout", user.LogoutHandler)
@@ -54,6 +52,5 @@ func NewRouter() *gin.Engine {
 	// 删除用户
 	apiv2.POST("/delete", user.Delete)
 
-	//apiv2.Use(app.JWT())
 	return r
 }

@@ -83,7 +83,7 @@ func QueryUserByAccount(userAccount string) (*User, error) {
 
 func QueryUserByUsername(username string) (*[]User, error) {
 	var user []User
-	// 如果 username 是索引列的话，则不能在左模糊查询（导致索引失效，全表扫描）
+	// 如果 username 是索引列的话，则不应该做左模糊查询（导致索引失效，全表扫描）
 	err := DBEngine.Where("isDelete=0 and username like ?", "%"+username+"%").Find(&user).Error
 	if err != nil {
 		return nil, err
